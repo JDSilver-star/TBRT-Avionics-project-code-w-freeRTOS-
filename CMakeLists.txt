@@ -21,6 +21,9 @@ project(PicoFreeRTOSProj C CXX ASM)
 set(CMAKE_C_STANDARD 11)
 set(CMAKE_CXX_STANDARD 17)
 
+# Skip picotool if no host compiler available
+set(PICO_NO_PICOTOOL 1)
+
 # Initialize Pico SDK
 pico_sdk_init()
 
