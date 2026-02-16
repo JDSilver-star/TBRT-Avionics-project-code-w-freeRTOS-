@@ -22,7 +22,6 @@ target_include_directories(main PRIVATE
     "${PICO_SDK_PATH}/src/common/pico_stdlib/include"
 )
 
-
 # Link libraries
 target_link_libraries(main pico_stdlib FreeRTOS-Kernel)
 
